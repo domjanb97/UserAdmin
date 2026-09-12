@@ -22,5 +22,16 @@ namespace UserAdmin.Views
         {
             InitializeComponent();
         }
+
+
+        private void Login_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Register_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
