@@ -30,15 +30,15 @@ namespace UserAdmin.Views
 
         private void Login_Click(object sender, RoutedEventArgs e)
         {
-
+            NavigationService.Navigate(new LoginPage());
         }
 
         private void Register_Click(object sender, RoutedEventArgs e)
         {
             var username = UsernameBox.Text.Trim();
             var email = EmailBox.Text.Trim();
-            var password = PasswordBox.Text;
-            var confirmpass = ConfirmPasswordBox.Text;
+            var password = PasswordBox.Password;
+            var confirmpass = ConfirmPasswordBox.Password;
 
             if (string.IsNullOrWhiteSpace(username) || string.IsNullOrWhiteSpace(email) || string.IsNullOrWhiteSpace(password) || string.IsNullOrWhiteSpace(confirmpass))
             {
